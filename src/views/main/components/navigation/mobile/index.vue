@@ -1,9 +1,15 @@
 <!-- main 首页文件夹 对应首页所有组件 -->
 <template>
+  <!-- <m-popup>
+  </m-popup>
+  <m-svg-icon></m-svg-icon> -->
+  <div class="bg-white dark:bg-zinc-900 duration-500 sticky top-0 left-0 z-10">
+    <ul class=" relative text-xs flex overflow-x-auto overflow-hidden p-1 mr-4">
+      <li></li>
+      <li class=" shrink-0 p-1  " v-for="item in data">{{ item }}</li>
+    </ul>
 
-  <ul>
-    <li v-for="item in data">{{ item }}</li>
-  </ul>
+  </div>
 
 </template>
 

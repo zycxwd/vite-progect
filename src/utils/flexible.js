@@ -18,9 +18,15 @@ export const isMobileTerminal = computed(() => {
 /**
  * 初始化 rem 基准值，最大为 40px
  */
-// export const useREM = () => {
-//   // 定义最大的 fontSize
-//   const MAX_FONT_SIZE = 40
+export const useREM = () => {
+  const MAX_FONT_SIZE = 40
+  document.addEventListener('DOMContentLoaded', () => {
+    const html = document.querySelector('html')
+    let fontSize = window.innerWidth / 10
+    fontSize = fontSize > MAX_FONT_SIZE ? MAX_FONT_SIZE : fontSize
+    html.style.fontSize = fontSize + 'px'
+  })
+}
 
 //   // 监听 html 文档被解析完成的事件
 //   document.addEventListener('DOMContentLoaded', () => {

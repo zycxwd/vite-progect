@@ -7,10 +7,10 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import MobieNavigationVue from './mobile/index.vue'
-import { isMobileTerminal } from "../../../../utils/flexible";
+import { isMobileTerminal } from "@/utils/flexible";
 import pcNavigationVue from './pc/index.vue'
 
-import { test1 } from '../../../../api/index'
+import { test1 } from '@/api/index'
 
 const testData = ref([])
 
